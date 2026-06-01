@@ -118,8 +118,8 @@ Você verá uma tabela na saída do summary. O valor mais importante é o Pr(>F)
 Se o p-valor for menor que 0.05 (nível de significância padrão), rejeitamos a hipótese nula e concluímos que existe diferença estatística significativa entre o peso das plantas dependendo do tratamento aplicado.
 
 📚 Recursos Adicionais
-Documentação do IRkernel(https://irkernel.github.io/)
+[Documentação do IRkernel](https://irkernel.github.io/)
 
-R for Data Science(https://r4ds.had.co.nz/) (Livro Gratuito)
+[R for Data Science](https://r4ds.had.co.nz/) (Livro Gratuito)
 
-Cheat Sheets do RStudio(https://opensource.posit.co/resources/cheatsheets/)
+[Cheat Sheets do RStudio](https://opensource.posit.co/resources/cheatsheets/)
