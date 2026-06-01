@@ -105,19 +105,20 @@ Saída esperada:
 
 
 # Executando a ANOVA
-# A sintaxe "weight ~ group" significa: queremos analisar o Peso em função do Grupo.
 ```R
+# A sintaxe "weight ~ group" significa: queremos analisar o Peso em função do Grupo.
 modelo_anova <- aov(weight ~ group, data = PlantGrowth)
-```
 
 # Visualizando o resumo estatístico
 summary(modelo_anova)
-Interpretando o resultado:
+```
+
+## Interpretando o resultado:
 Você verá uma tabela na saída do summary. O valor mais importante é o Pr(>F), que é o nosso p-valor (p-value).
 
 Se o p-valor for menor que 0.05 (nível de significância padrão), rejeitamos a hipótese nula e concluímos que existe diferença estatística significativa entre o peso das plantas dependendo do tratamento aplicado.
 
-📚 Recursos Adicionais
+## 📚 Recursos Adicionais
 [Documentação do IRkernel](https://irkernel.github.io/)
 
 [R for Data Science](https://r4ds.had.co.nz/) (Livro Gratuito)
