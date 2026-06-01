@@ -27,7 +27,7 @@ Abra o terminal e execute os seguintes comandos:
 sudo apt update
 sudo apt install r-base
 ```
-2. Integrando o R ao Jupyter Notebook
+## 2. Integrando o R ao Jupyter Notebook
 Para que o Jupyter Notebook reconheça a linguagem R, precisamos instalar o kernel do R, chamado IRkernel.
 
 Abra o console do R.
@@ -42,7 +42,7 @@ Dentro do console do R (onde você verá o símbolo >), digite o comando abaixo 
    install.packages("IRkernel")
 (Se perguntar sobre qual "CRAN mirror" utilizar, selecione o mais próximo de você, como o do Brasil).
 ```
-3. Após a instalação terminar, registre o kernel para que o Jupyter o encontre executando este comando:
+Após a instalação terminar, registre o kernel para que o Jupyter o encontre executando este comando:
 
 ```R
    IRkernel::installspec(user = FALSE)
@@ -51,7 +51,7 @@ Dentro do console do R (onde você verá o símbolo >), digite o comando abaixo 
 
 Pronto! Na próxima vez que você abrir o Jupyter Notebook, verá a opção de criar um novo notebook usando a linguagem R.
 
-3. O Básico de Programação em R
+## 3. O Básico de Programação em R
 Se você já programa em Python, a transição para o R será bem tranquila. O R foi construído especificamente com a manipulação de dados em mente.
 
 Variáveis e Atribuições
@@ -82,7 +82,7 @@ dados_experimento <- data.frame(
   sucesso = c(TRUE, TRUE, FALSE)
 )
 ```
-4. Exemplo Prático: ANOVA em R
+## 4. Exemplo Prático: ANOVA em R
 O R brilha de verdade nas análises estatísticas. A ANOVA (Análise de Variância) é usada para comparar as médias de três ou mais grupos para ver se eles são estatisticamente diferentes entre si.
 
 Vamos usar um dataset nativo do R chamado PlantGrowth, que contém os resultados de um experimento para comparar o peso de plantas cultivadas sob três condições diferentes: um grupo controle (ctrl) e dois tratamentos diferentes (trt1, trt2).
@@ -104,13 +104,13 @@ Saída esperada:
 ```
 
 
-# 2. Executando a ANOVA
+# Executando a ANOVA
 # A sintaxe "weight ~ group" significa: queremos analisar o Peso em função do Grupo.
 ```R
 modelo_anova <- aov(weight ~ group, data = PlantGrowth)
 ```
 
-# 3. Visualizando o resumo estatístico
+# Visualizando o resumo estatístico
 summary(modelo_anova)
 Interpretando o resultado:
 Você verá uma tabela na saída do summary. O valor mais importante é o Pr(>F), que é o nosso p-valor (p-value).
